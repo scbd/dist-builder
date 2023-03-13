@@ -1,5 +1,5 @@
 import changeCase from 'change-case'
-const  commands   = [ 'build','importMaps', 'buildTestWidget', 'applyPkgDefaults', 'releaseDev' ] 
+const  commands   = [ 'build', 'releaseDev' ] 
 
 
 export const getAllUserArgs = () => {
