@@ -16,7 +16,7 @@ export const config  = {}
 
 //   const rawConfig = (await import(pathToFileURL(configFilePath).href)).distBuilderConfig
 
-//   const { minify, modern, legacy, widget, testWidget, clean = true, browserEsmPackages = {}, cdnUrl = 'https://cdn.cbd.int', debug = true } = rawConfig || {}
+//   const { minify, modern, legacy, widget, testWidget, clean = true, browserEsmPackages = {}, cdnUrl = 'https://cdn.jsdelivr.net/npm', debug = true } = rawConfig || {}
 
 //   const { cjs    , umd } = legacy       || {}
 //   const { browser, ssr } = modern       || {}
@@ -56,7 +56,7 @@ export const normalizeConfig = (passedConfig) => {
 
   if(Object.keys(config).length) return config
 
-  const { preview, external, globals, imports, minify, modern, legacy, widget, testWidget, clean = true, browserEsmPackages = {}, cdnUrl = 'https://cdn.cbd.int', debug = true } = passedConfig || {}
+  const { preview, external, globals, imports, minify, modern, legacy, widget, testWidget, clean = true, browserEsmPackages = {}, cdnUrl = 'https://cdn.jsdelivr.net/npm', debug = true } = passedConfig || {}
 
   const { cjs    , umd } = legacy       || {}
   const { browser, ssr } = modern       || {}
@@ -80,7 +80,7 @@ export const normalizeConfig = (passedConfig) => {
 //   return `https://cdn.jsdelivr.net/npm/es-module-shims@${version}/dist/es-module-shims.js`
 // }
 
-const cdnUrl = 'https://cdn.cbd.int'
+const cdnUrl = 'https://cdn.jsdelivr.net/npm'
 // export const getCssUrl = () => {
 //   return `${cdnUrl}/${name}/dist/style.css`
 // }
